@@ -1,0 +1,99 @@
+header {
+    &.primary {
+        background: $clr-rbc-blue-dark;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+
+        .logo {
+            background: $clr-rbc-blue;
+            color: #fff;
+            display: inline-block;
+            float: left;
+            font-family: 'Futura LT';
+            font-size: 20px;
+            line-height: 50px;
+            padding: 0 20px;
+            width: 200px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        nav {
+            float: left;
+
+            ul {
+                font-size: 0;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        color: rgba(#fff, 0.75);
+                        display: inline-block;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        padding: 0 20px;
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+
+                        &.active {
+                            background-color: $clr-rbc-yellow;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            .dropdown-toggle {
+                color: rgba(#fff, 0.75);
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 50px;
+                padding: 0 20px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &.secondary {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        margin-left: 200px;
+
+        .inner {
+            background: $clr-rbc-yellow;
+            height: 30px;
+
+            li {
+                display: inline-block;
+            }
+
+            a {
+                color: #000;
+                display: inline-block;
+                font-weight: 700;
+                line-height: 30px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
